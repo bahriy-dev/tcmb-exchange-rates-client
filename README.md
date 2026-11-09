@@ -1,6 +1,6 @@
 # TCMB Exchange Rates: TypeScript client for TCMB döviz kurları
 
-[![CI](https://github.com/bahriy-dev/tcmb-exchange-rates/actions/workflows/ci.yml/badge.svg)](https://github.com/bahriy-dev/tcmb-exchange-rates/actions/workflows/ci.yml)
+[![CI](https://github.com/bahriy-dev/tcmb-exchange-rates-client/actions/workflows/ci.yml/badge.svg)](https://github.com/bahriy-dev/tcmb-exchange-rates-client/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6)
@@ -37,7 +37,7 @@ weekly CI job runs the suite against the live service.
 ## Install
 
 ```bash
-npm install github:bahriy-dev/tcmb-exchange-rates
+npm install github:bahriy-dev/tcmb-exchange-rates-client
 ```
 
 Requires Node.js 20+ (uses the global `fetch`). It also works in Bun, Deno and edge runtimes.
