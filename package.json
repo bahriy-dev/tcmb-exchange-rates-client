@@ -2,17 +2,43 @@
   "name": "@bahriy-dev/tcmb-exchange-rates",
   "version": "1.0.0",
   "description": "Typed, zero-dependency client for the Central Bank of the Republic of Türkiye (TCMB) exchange rate XML service. TCMB döviz kurları: today.xml, archive by date, holiday fallback, currency conversion.",
-  "keywords": ["tcmb", "döviz", "doviz-kuru", "kur", "exchange-rates", "currency", "turkey", "turkiye", "try", "lira", "xml", "e-commerce", "cbrt"],
+  "keywords": [
+    "tcmb",
+    "döviz",
+    "doviz-kuru",
+    "kur",
+    "exchange-rates",
+    "currency",
+    "turkey",
+    "turkiye",
+    "try",
+    "lira",
+    "xml",
+    "e-commerce",
+    "cbrt"
+  ],
   "license": "MIT",
   "author": "Bahri Yılmaz (https://bahriyilmaz.dev)",
-  "repository": { "type": "git", "url": "git+https://github.com/bahriy-dev/tcmb-exchange-rates-client.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahriy-dev/tcmb-exchange-rates-client.git"
+  },
   "homepage": "https://github.com/bahriy-dev/tcmb-exchange-rates-client#readme",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
-  "bin": { "tcmb-rates": "./dist/cli.js" },
-  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "tcmb-rates": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
@@ -22,9 +48,11 @@
     "prepublishOnly": "npm run typecheck && npm test && npm run build"
   },
   "devDependencies": {
-    "@types/node": "^24",
-    "typescript": "^5",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
     "vitest": "5.1.0"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }
