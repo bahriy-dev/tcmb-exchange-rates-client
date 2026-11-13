@@ -40,7 +40,14 @@ weekly CI job runs the suite against the live service.
 npm install github:bahriy-dev/tcmb-exchange-rates-client
 ```
 
-Requires Node.js 20+ (uses the global `fetch`). It also works in Bun, Deno and edge runtimes.
+Releases are also published to [GitHub Packages](https://github.com/bahriy-dev/tcmb-exchange-rates-client/pkgs/npm/tcmb-exchange-rates). npm needs a GitHub token with `read:packages` for that registry:
+
+```bash
+echo "@bahriy-dev:registry=https://npm.pkg.github.com" >> .npmrc
+npm install @bahriy-dev/tcmb-exchange-rates
+```
+
+Requires Node.js 22+ (uses the global `fetch`). It also works in Bun, Deno and edge runtimes.
 
 ## API
 
